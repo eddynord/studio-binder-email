@@ -1,208 +1,510 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Binder Email</title>
     <style>
-        body { margin: 0; background-color: #ebeff2; font-family: Arial, Helvetica, sans-serif;}
-        table { border-spacing: 0;}
-        td { padding: 0;}
-        img { border: 0; }
-        .wrapper { width: 100%; table-layout: fixed;}
-        .main, .header, .directing, .actors, .writing, .characters , .glitch, .hiring, .footer{width: 100%; max-width: 600px; border-spacing: 0; margin: 0 auto;}
-        .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 600px; }
-        .header { text-align: center; background-color: #ffffff; padding-bottom: 100px;}
-        .header h5, .glitch h5, .music h5 { font-weight: 100; color: #ff3d4f; letter-spacing: 1px; }
-        .directing h5, .actors h5 { color: #08c6db; font-weight: 100; letter-spacing: 1px;}
-        .hiring h5 { color: #a3abb0; font-weight: 100; letter-spacing: 1px; }
-       
-        .writing h5, .characters h5 { color: #f3cc0f; font-weight: 100; letter-spacing: 1px; }
-        .header h1 { font-size: 45px;}
-        .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 14px;}
-        .btn { background-color: #5d7aff; color: #ffffff; padding: 16px 35px; border-radius: 6px; 
-                text-decoration: none; font-size: 14px;}
-        .directing, .actors, .writing, .characters, .glitch, .music, .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
-        .footer { margin-top: 60px; padding-bottom: 20px;}
-        .social { display: flex; flex-direction: row; gap: 20px; justify-content: center;}
+        body {
+            margin: 0;
+            background-color: #ebeff2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .main,
+        .header,
+        .directing,
+        .actors,
+        .writing,
+        .characters,
+        .glitch,
+        .hiring,
+        .footer {
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            margin: 0 auto;
+        }
+
+        .header img,
+        .directing img,
+        .actors img,
+        .writing img,
+        .characters img,
+        .glitch img,
+        .music img,
+        .hiring img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+            padding-bottom: 100px;
+        }
+
+        .header h5,
+        .glitch h5,
+        .music h5 {
+            font-weight: 100;
+            color: #ff3d4f;
+            letter-spacing: 1px;
+        }
+
+        .directing h5,
+        .actors h5 {
+            color: #08c6db;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        .hiring h5 {
+            color: #a3abb0;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        .writing h5,
+        .characters h5 {
+            color: #f3cc0f;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+        }
+
+        .header p,
+        .directing p,
+        .actors p,
+        .writing p,
+        .characters p,
+        .glitch p,
+        .music p,
+        .hiring p {
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: #5d7aff;
+            color: #ffffff;
+            padding: 16px 35px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .directing,
+        .actors,
+        .writing,
+        .characters,
+        .glitch,
+        .music,
+        .hiring {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #ffffff;
+            padding-bottom: 100px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+        }
 
 
 
         /* MEDIA QUERY */
 
         @media screen and (max-width: 600px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 482px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 482px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 482px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 482px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 12px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
 
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 12px;
+            }
         }
 
+
+
         @media screen and (max-width: 480px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 362px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 363px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 362px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 363px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 12px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 12px;
+            }
 
         }
 
         @media screen and (max-width: 414px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 400px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 400px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 400px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 400px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 9px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 9px;
+            }
 
         }
 
         @media screen and (max-width: 390px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 380px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 380px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 380px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 380px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 9px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 9px;
+            }
 
         }
 
         @media screen and (max-width: 360px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 350px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 350px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 350px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 350px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 9px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 9px;
+            }
 
         }
 
         @media screen and (max-width: 320px) {
-            .main, 
-            .header, 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters , 
-            .glitch, 
-            .hiring, 
-            .footer{width: 100%; max-width: 310px; border-spacing: 0; margin: 0 auto;}
 
-            .header img, .directing img, .actors img, .writing img, .characters img, .glitch img , .music img, .hiring img { 
-            width: 100%; max-width: 310px; }
+            .main,
+            .header,
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .hiring,
+            .footer {
+                width: 100%;
+                max-width: 310px;
+                border-spacing: 0;
+                margin: 0 auto;
+            }
 
-            .directing, 
-            .actors, 
-            .writing, 
-            .characters, 
-            .glitch, 
-            .music, 
-            .hiring { margin-top: 30px; text-align: center; background-color: #ffffff; padding-bottom: 100px;}
+            .header img,
+            .directing img,
+            .actors img,
+            .writing img,
+            .characters img,
+            .glitch img,
+            .music img,
+            .hiring img {
+                width: 100%;
+                max-width: 310px;
+            }
 
-            .footer { margin-top: 60px; padding-bottom: 20px;}
+            .directing,
+            .actors,
+            .writing,
+            .characters,
+            .glitch,
+            .music,
+            .hiring {
+                margin-top: 30px;
+                text-align: center;
+                background-color: #ffffff;
+                padding-bottom: 100px;
+            }
 
-            .header p, .directing p, .actors p, .writing p, .characters p, .glitch p, .music p, .hiring p { font-size: 8px;}
+            .footer {
+                margin-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .header p,
+            .directing p,
+            .actors p,
+            .writing p,
+            .characters p,
+            .glitch p,
+            .music p,
+            .hiring p {
+                font-size: 8px;
+            }
 
         }
-        
-        
-        
-    
     </style>
+
 </head>
 
 <body>
@@ -217,7 +519,7 @@
                             </td>
                         </tr>
                     </table>
-                    
+
                 </td>
             </tr>
 
@@ -228,7 +530,8 @@
                     <table class="header">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_header.jpg" alt="banner header" title="banner header"></a>
+                                <a href="#"><img src="/img/banners/banner_header.jpg" alt="banner header"
+                                        title="banner header"></a>
                             </td>
                         </tr>
 
@@ -246,7 +549,8 @@
 
                         <tr>
                             <td style="line-height: 28px;">
-                                <p><i>The Matrix, Us, </i>and <i>The Lego Movie </i>all pay homage to <span style="background-color: yellow ;">Plato</span>'s allegory. This<br> 
+                                <p><i>The Matrix, Us, </i>and <i>The Lego Movie </i>all pay homage to <span
+                                        style="background-color: yellow ;">Plato</span>'s allegory. This<br>
                                     video explains what it means and what writers today can take from it.</p>
                             </td>
                         </tr>
@@ -266,7 +570,8 @@
                     <table class="directing">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_feature.jpg" alt="banner feature" title="banner feature"></a>
+                                <a href="#"><img src="/img/banners/banner_feature.jpg" alt="banner feature"
+                                        title="banner feature"></a>
                             </td>
                         </tr>
 
@@ -297,13 +602,14 @@
                         </tr>
                     </table>
                     <!-- DIRECTING SECTION END -->
-                    
-                    
+
+
                     <!-- ACTORS SECTION -->
                     <table class="actors">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_directing.jpg" alt="banner directing" title="banner directing"></a>
+                                <a href="#"><img src="/img/banners/banner_directing.jpg" alt="banner directing"
+                                        title="banner directing"></a>
                             </td>
                         </tr>
 
@@ -334,13 +640,14 @@
                         </tr>
                     </table>
                     <!-- ACTORS SECTION END -->
-                    
-                    
+
+
                     <!-- WRITING SECTION -->
                     <table class="writing">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_writing.jpg" alt="banner writing" title="banner writing"></a>
+                                <a href="#"><img src="/img/banners/banner_writing.jpg" alt="banner writing"
+                                        title="banner writing"></a>
                             </td>
                         </tr>
 
@@ -378,7 +685,8 @@
                     <table class="characters">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_characters.jpg" alt="banner characters" title="banner characters"></a>
+                                <a href="#"><img src="/img/banners/banner_characters.jpg" alt="banner characters"
+                                        title="banner characters"></a>
                             </td>
                         </tr>
 
@@ -409,14 +717,15 @@
                     </table>
                     <!-- CHARACTERS SECTION END -->
 
-                    
-                    
-                    
+
+
+
                     <!-- GLITCH SECTION -->
                     <table class="glitch">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_post.jpg" alt="banner post" title="banner post"></a>
+                                <a href="#"><img src="/img/banners/banner_post.jpg" alt="banner post"
+                                        title="banner post"></a>
                             </td>
                         </tr>
 
@@ -454,7 +763,8 @@
                     <table class="music">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_music.jpg" alt="banner music" title="banner music"></a>
+                                <a href="#"><img src="/img/banners/banner_music.jpg" alt="banner music"
+                                        title="banner music"></a>
                             </td>
                         </tr>
 
@@ -490,7 +800,8 @@
                     <table class="hiring">
                         <tr>
                             <td>
-                                <a href="#"><img src="/img/banners/banner_hiring.jpg" alt="banner hiring" title="banner hiring"></a>
+                                <a href="#"><img src="/img/banners/banner_hiring.jpg" alt="banner hiring"
+                                        title="banner hiring"></a>
                             </td>
                         </tr>
 
@@ -522,25 +833,34 @@
                     </table>
                     <!-- HIRING SECTION END -->
 
-                    
+
                     <!-- FOOTER SECTION  -->
                     <table class="footer">
                         <tr>
                             <td>
                                 <table align="center" style="text-align: center;">
                                     <tr>
-                                        <td class="social" >
-                                            <a href="#"><img src="/img/icons/facebook_icon.png" alt="facebook icon" title="facebook icon" width="40" style="background-color: #3b579d ;"></a>
-                                            <a href="#"><img src="/img/icons/twitter_icon.png" alt="facebook icon" title="facebook icon" width="40" style="background-color: #7ac4f7;"></a>
-                                            <a href="#"><img src="/img/icons/instagram_icon.png" alt="facebook icon" title="facebook icon" width="40" style="background-color: #7f4b30 ;"></a>
+                                        <td class="social">
+                                            <a href="#"><img src="/img/icons/facebook_icon.png" alt="facebook icon"
+                                                    title="facebook icon" width="40"
+                                                    style="background-color: #3b579d ;"></a>
+                                            <a href="#"><img src="/img/icons/twitter_icon.png" alt="facebook icon"
+                                                    title="facebook icon" width="40"
+                                                    style="background-color: #7ac4f7;"></a>
+                                            <a href="#"><img src="/img/icons/instagram_icon.png" alt="facebook icon"
+                                                    title="facebook icon" width="40"
+                                                    style="background-color: #7f4b30 ;"></a>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td style="padding-top: 40px;">
-                                            <h5 style="color: #a3abb0; font-weight: 100;font-size: 12px;">STUDIOBINDER—PROJECT MANAGEMENT FOR VIDEO CREATIVES.</h5>
-                                            <h5 style="color: #a3abb0; font-weight: 100;font-size: 12px;">©2021 STUDIOBINDER, INC.</h5>
-                                            <a href="#" style="font-size: 11px; color:#1155cc;">Unsubscribe<span> | </span> Update Preferences</a>
+                                            <h5 style="color: #a3abb0; font-weight: 100;font-size: 12px;">
+                                                STUDIOBINDER—PROJECT MANAGEMENT FOR VIDEO CREATIVES.</h5>
+                                            <h5 style="color: #a3abb0; font-weight: 100;font-size: 12px;">©2021
+                                                STUDIOBINDER, INC.</h5>
+                                            <a href="#" style="font-size: 11px; color:#1155cc;">Unsubscribe<span> |
+                                                </span> Update Preferences</a>
                                         </td>
                                     </tr>
 
@@ -558,6 +878,7 @@
         </table>
 
     </div>
-    
+
 </body>
+
 </html>
